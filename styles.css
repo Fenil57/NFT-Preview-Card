@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Very-dark-blue-main-BG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.125rem;
+}
+.card,
+.img-1 {
+  border-radius: 12px;
+}
+
+.card {
+  width: 20rem;
+  background-color: var(--Very-dark-blue-card-BG);
+  padding: 1.4rem;
+  position: relative;
+}
+
+.img-1 {
+  width: 100%;
+}
+
+.img-0 {
+  background-color: var(--Cyan);
+  position: absolute;
+  width: 17.18rem;
+  height: 17.18rem;
+  top: 1.4rem;
+  left: 1.4rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.img-0:hover {
+  opacity: 0.6;
+  transition: linear 0.4s;
+  cursor: pointer;
+}
+
+.title {
+  color: var(--White);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.1rem 0;
+}
+
+.title:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.sub-title {
+  color: var(--Soft-blue);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+
+.info .sub-info {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.sub-info .price {
+  color: var(--Cyan);
+}
+
+.sub-info .time {
+  color: var(--Soft-blue);
+}
+
+.footer {
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.img-4 {
+  width: 2.2rem;
+  border: 1px solid var(--White);
+  border-radius: 100%;
+}
+
+.footer p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--Soft-blue);
+}
+
+.footer p span {
+  color: var(--White);
+}
+
+.footer p span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
